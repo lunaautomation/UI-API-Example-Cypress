@@ -1,10 +1,7 @@
 {
-  "name": "Example Cypress",
+  "name": "Example Cypress UI and API",
+  "author": "D Hitchcock",
   "version": "1.0.0",
-  "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
-  },
   "dependencies": {
 
   }
