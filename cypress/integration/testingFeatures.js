@@ -18,7 +18,6 @@ describe('UI Tests', function () {
           })
       });
   });
-
   it('Check \'Hello World\' appears after AJAX loader', function () {
     cy.contains('Dynamic Loading').click();
     cy.contains('Example 2: Element rendered after the fact').click();
