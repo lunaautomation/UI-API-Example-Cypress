@@ -29,7 +29,7 @@ describe('UI Tests', function () {
 });
 
 describe('API Tests', function() {
-  it('check you can create a user', function () {
+  it('Check you can create a new user', function () {
     let rng = Math.floor((Math.random() * 100000000) + 1);
     cy.request({
       body: {
