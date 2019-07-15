@@ -2,8 +2,8 @@
 
 clone repository 
 
-run npm install
+run <b>npm install</b>.
 
-npx cypress open
+open the cypress test runner with <b>npx cypress open</b>
 
-run testingFeatures.js in the cypress runner
+run <b>testingFeatures.js</b> in the cypress test runner
