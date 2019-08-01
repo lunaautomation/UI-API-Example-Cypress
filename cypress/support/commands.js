@@ -23,3 +23,15 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("createNewUser", (name, salary, age) => {
+ cy.request({
+     body: { 
+         name: name,
+         salary: salary,
+         age: age,
+     },
+     method: 'POST',
+     url: 'http://dummy.restapiexample.com/api/v1/create'
+ })
+});

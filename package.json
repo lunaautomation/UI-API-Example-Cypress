@@ -3,6 +3,6 @@
   "author": "D Hitchcock",
   "version": "1.0.0",
   "dependencies": {
-
+    "cypress-plugin-snapshots": "^1.2.6"
   }
 }
