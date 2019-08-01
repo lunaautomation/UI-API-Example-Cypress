@@ -1,8 +1,8 @@
 {
-  "name": "Test UI and API",
+  "name": "3333",
   "author": "D Hitchcock",
-  "version": "1.0.0",
   "dependencies": {
+    "cypress": "^3.4.0",
     "cypress-plugin-snapshots": "^1.2.6"
   }
 }

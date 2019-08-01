@@ -3,7 +3,7 @@ describe('UI Tests', function () {
     cy.visit("https://the-internet.herokuapp.com/")
   });
 
-  it.skip('toMatchImageSnapshot - whole page', () => {
+  it.skip('Check Challenging DOM page has\'t changed', () => {
     cy.contains('Challenging DOM').click()
       .then(() => {
         cy.document()
