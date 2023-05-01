@@ -1,4 +1,4 @@
-# techTestBJSS
+Cypress example tests 
 
 clone repository 
 
