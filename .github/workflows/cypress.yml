@@ -15,13 +15,14 @@ jobs:
       timeout-minutes: 5
       with:    
         config-file: ./cypress.config.js     
-        spec: ./cypress/e2e/pricing-tool-develop.spec.ts
+        spec: ./cypress/e2e/testingFeatures.js
         browser: chrome
         record: false
+        start: npm run e2e:cypress:run
     
     - name: Upload test files
       uses: actions/upload-artifact@v3
       if: failure()
       with:
           name: cypress-screenshots
-          path: ./frontend/planner/cypress/screenshots
+          path: ./cypress/screenshots
