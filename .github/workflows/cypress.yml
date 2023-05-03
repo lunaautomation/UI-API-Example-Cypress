@@ -11,14 +11,10 @@ jobs:
     steps: 
     - uses: actions/checkout@v3
     - name: Cypress run
-      uses: cypress-io/github-action@v5
+      uses: cypress-io/github-action@v4
       timeout-minutes: 5
       with:    
-        config-file: ./cypress.config.js     
-        spec: ./cypress/e2e/testingFeatures.js
         browser: chrome
-        record: false
-        start: npm run e2e:cypress:run
     
     - name: Upload test files
       uses: actions/upload-artifact@v3
