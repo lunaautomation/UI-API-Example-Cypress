@@ -67,7 +67,7 @@ describe('UI Tests', function () {
   });
 });
 
-describe.skip('API Tests with AJV', function () {
+describe('API Tests with AJV', function () {
   it('Check you can create a new unique user', function () {
     let rng = randomInt(1000);
     cy.createNewUser('Dave' + rng, '4555', '33').then(response => {
