@@ -1,6 +1,6 @@
-##Cypress Example Tests##
+## Cypress Example Tests
 
-#To get this working#
+# To get this working :running:
 
 clone repository 
 
