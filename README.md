@@ -4,9 +4,9 @@
 
 clone repository 
 
-Ensure you have NPM installed and,
-run <b>npm install</b> in the cloned folder.
+Ensure you have Yarn installed and,
+run <b>yarn install</b> in the cloned folder.
 
-open the cypress test runner with <b>npm run e2e:cypress</b>
+open the cypress test runner with <b>yarn run e2e:cypress</b>
 
 run <b>testingFeatures.js</b> in the cypress test runner
