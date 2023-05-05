@@ -16,6 +16,12 @@ Cypress.Commands.add('createNewUser', (name, salary, age) => {
     url: `${Cypress.env('apiUrl')}v1/create`,
   });
 });
+Cypress.Commands.add('getUsers', () => {
+  cy.request({
+    method: 'POST',
+    url: `${Cypress.env('apiUrl')}v1/employees`,
+  });
+});
 
 addMatchImageSnapshotCommand({
     failureThreshold: 0.5,
