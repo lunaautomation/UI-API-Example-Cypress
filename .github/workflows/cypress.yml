@@ -6,6 +6,10 @@ on:
 concurrency: cypress-ui
   
 jobs:
+  build:
+   - run: yarn --prefer-offline
+      name: Setup workspace
+      
   cypress-ui:
     runs-on: ubuntu-latest
     steps: 
