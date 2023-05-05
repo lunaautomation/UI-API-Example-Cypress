@@ -5,14 +5,14 @@ on:
 
 concurrency: cypress-ui
   
-jobs:
-  build:
-   - run: yarn --prefer-offline
-      name: Setup workspace
-      
+jobs:     
   cypress-ui:
     runs-on: ubuntu-latest
     steps: 
+    
+    - run: yarn --prefer-offline
+      name: Setup workspace
+
     - uses: actions/checkout@v3
     - name: Cypress run
       uses: cypress-io/github-action@v4
