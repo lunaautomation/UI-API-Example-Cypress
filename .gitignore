@@ -1,2 +1,3 @@
 node_modules
-cypress\snapshots\__diff_output__
+cypress/snapshots/__diff_output__
+cypress/screenshots/testingFeatures.cy.js/*

@@ -18,7 +18,7 @@ Cypress.Commands.add('createNewUser', (name, salary, age) => {
 });
 Cypress.Commands.add('getUsers', () => {
   cy.request({
-    method: 'POST',
+    method: 'GET',
     url: `${Cypress.env('apiUrl')}v1/employees`,
   });
 });

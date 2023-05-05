@@ -1,6 +1,6 @@
 import randomInt from '../support/helpers';
 import userDetailsResponse from '../support/schemas/createUserResponse';
-import getCurrentUsersResponse from './support/schemas/getCurrentUsersResponse';
+import usersResponse from '../support/schemas/getCurrentUsersResponse';
 describe('UI Tests', function () {
   beforeEach(function () {
     cy.visit(Cypress.env('baseUrl'));
@@ -82,7 +82,7 @@ describe('API Tests with AJV', function () {
 
   it('Check you can get all current users', function () {
     cy.getUsers().then(response => {
-      cy.validateSchema(getCurrentUsersResponse, response.body);
+      cy.validateSchema(usersResponse, response.body);
       expect(response.body.status).to.contains('success');
     });
   });
