@@ -1,5 +1,5 @@
-export {getUserRes as default};
-const getUserRes = {
+export {getUserResponse as default};
+const getUserResponse = {
     "type": "object",
     "properties": {
       "status": { "type": "string", "enum": ["success"] },
